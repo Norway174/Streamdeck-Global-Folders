@@ -1,0 +1,82 @@
+{
+	"UUID": "com.norway174.global.folders",
+	"Name": "Global Folders",
+	"Version": "0.1.0.0",
+	"Category": "Global Folders",
+	"Author": "Norway174",
+	"Description": "Adds a global folders system to your Streamdeck",
+	"Icon": "imgs/plugin/marketplace",
+	"Actions": [
+		{
+			"Name": "Open Global Folder",
+			"UUID": "com.norway174.global.folders.opengfolder",
+			"Icon": "imgs/actions/global_folders/folder",
+			"Tooltip": "Opens the selected global folder.",
+			"PropertyInspectorPath": "ui/open-gfolder.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/global_folders/folder",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Exit Global Folder",
+			"UUID": "com.norway174.global.folders.exitgfolder",
+			"Icon": "imgs/actions/global_folders/back_arrow",
+			"Tooltip": "Exits the current global folder.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/global_folders/back_arrow",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"Profiles": [
+		{
+			"Name": "Global Folder 1",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false
+		},
+		{
+			"Name": "Global Folder 2",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false
+		},
+		{
+			"Name": "Global Folder 3",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false
+		}
+	]
+}

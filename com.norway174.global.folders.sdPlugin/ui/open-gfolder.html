@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Global Folder Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectElement = document.querySelector('sdpi-select[setting="gfolder"]');
+            selectElement.addEventListener('change', function (event) {
+                const selectedOption = event.target.value;
+                const folderNumber = selectedOption.replace("Global Folder ", "");
+                document.title = `Global Folder Settings - ${folderNumber}`;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--
+        Learn more about property inspector components at https://sdpi-components.dev/docs/components
+    -->
+    <sdpi-item label="Select Global Folder"></sdpi-item>
+        <sdpi-select setting="gfolder" placeholder="Please choose a global folder">
+            <optgroup label="Global Folders">
+                <option value="Global Folder 1">Global Folder 1</option>
+                <option value="Global Folder 2">Global Folder 2</option>
+                <option value="Global Folder 3">Global Folder 3</option>
+            </optgroup>
+        </sdpi-select>
+    </sdpi-item>
+</body>
+
+</html>
