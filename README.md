@@ -20,10 +20,10 @@ This project came to be from this [Reddit thread](https://www.reddit.com/r/elgat
 
 * Same with folders. However, folders will not re-open where you last were.
 
-Any other issues can be posted to [Issues](./issues) here on GitHub.
+Any other issues can be posted to [Issues](https://github.com/Norway174/Streamdeck-Global-Folders/issues) here on GitHub.
 
 ## Download
-The .streamDeckPlugin file has been posted in [Releases](./releases), for a quick and convinient way of installing the plugin.
+The .streamDeckPlugin file has been posted in [Releases](https://github.com/Norway174/Streamdeck-Global-Folders/releases), for a quick and convinient way of installing the plugin.
 
 ## Adding more Profiles
 Currently, this adds 3 configureable profiles for you to use and choose from.
